@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAME WIBU</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-area">
+
+        <div class="controls">
+            <button class="control-button" id="left-button">KIRI</button>
+            <button class="control-button" id="right-button">KANAN</button>
+        </div>
+        
+        <div class="start-screen">
+            <h1>LARI ADA WIBU</h1>
+            <div class="level-options">
+                <button class="level-button" data-level="1">Level 1</button>
+                <button class="level-button" data-level="2">Level 2</button>
+                <button class="level-button" data-level="3">Level 3</button>
+                <!-- Tambahkan tombol level lainnya sesuai dengan kebutuhan -->
+            </div>
+            <button id="start-button">LARI BANG</button>
+        </div>
+        
+        <div class="game-over-screen">
+            <h1>YAH KETANGKEP</h1>
+            <p>Skor Kamu: <span id="final-score">0</span></p>
+            <button id="restart-button">KABUR LAGI</button>
+        </div>
+
+        <div class="score">
+            Skor: <span id="score">0</span>
+        </div>
+
+        <div class="current-level">
+            Level: <span id="current-level">1</span>
+        </div>
+
+        <div class="road">
+            <!-- Lintasan dan elemen lainnya tetap sama -->
+        </div>
+    </div>
+    <img src="waifu.jpg" alt="Mobil" class="car">
+
+    <!-- Tambahkan tag audio untuk musik -->
+    <audio id="background-music" loop>
+        <audio autoplay>
+        <source src="musik.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
